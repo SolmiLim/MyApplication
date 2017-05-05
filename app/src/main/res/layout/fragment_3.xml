@@ -1,12 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_centerHorizontal="true"
+        android:id = "@+id/buttonLayout"
+        android:layout_marginTop = "55dip">
 
-    <TextView
-        android:layout_width="wrap_content"
+        <Button
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:text = "자랑"
+            android:textAlignment="center"
+            android:id = "@+id/proud_bt"
+            android:background="@color/colorPoint"
+            />
+
+        <Button
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:text = "질문"
+            android:textAlignment="center"
+            android:id = "@+id/question_bt"
+            android:background="@color/colorMain"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below = "@+id/buttonLayout"
+        android:id="@+id/proud_list"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text = "세번째 프레그먼트"/>
+        />
 
-</LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below = "@+id/buttonLayout"
+        android:id="@+id/question_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+</RelativeLayout>

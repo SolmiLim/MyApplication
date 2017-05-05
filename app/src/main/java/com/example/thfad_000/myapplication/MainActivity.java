@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.home_icon_selected)); //setIcon
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.search_icon));
-        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.suggest_icon));
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.alarm_icon));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.mypage_icon));
 
         // Initializing ViewPager
         viewPager = (ViewPager) findViewById(R.id.pager);
@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
                 switch(tab.getPosition()){
                     case 0: tab.setIcon(R.drawable.home_icon_selected); break;
                     case 1: tab.setIcon(R.drawable.search_icon_selected); break;
-                    case 2: tab.setIcon(R.drawable.suggest_icon_selected); break;
-                    case 3: tab.setIcon(R.drawable.alarm_icon_selected); break;
+                    case 2: tab.setIcon(R.drawable.alarm_icon_selected); break;
+                    case 3: tab.setIcon(R.drawable.mypage_icon_selected); break;
 
                 }
             }
@@ -50,12 +50,11 @@ public class MainActivity extends AppCompatActivity {
                 switch(tab.getPosition()){
                     case 0: tab.setIcon(R.drawable.home_icon); break;
                     case 1: tab.setIcon(R.drawable.search_icon); break;
-                    case 2: tab.setIcon(R.drawable.suggest_icon); break;
-                    case 3: tab.setIcon(R.drawable.alarm_icon); break;
+                    case 2: tab.setIcon(R.drawable.alarm_icon); break;
+                    case 3: tab.setIcon(R.drawable.mypage_icon); break;
 
                 }
             }
-
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
 
