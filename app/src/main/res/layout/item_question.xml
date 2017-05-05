@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="70dip"
+    android:background="#FFFFFF"
+    android:layout_marginBottom = "2dip"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin = "5dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/question_date"
+            android:textSize="10dip"
+            android:text = "Date"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/question_name"
+            android:textSize = "10dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:text = "Name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/question_title"
+            android:text = "Title"
+            android:textSize="10dip"
+            android:layout_below = "@+id/question_date"
+            android:layout_marginLeft = "8dip"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id = "@+id/question_comment"
+            android:layout_marginRight="10dip"
+            android:textSize="10dip"
+            android:text = "Comment"
+            android:layout_alignParentBottom="true"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
